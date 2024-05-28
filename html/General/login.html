@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/login.css">
+
+    <title>Portal de Editais - Login</title>
+</head>
+
+<body>
+    <section id="sessão_1">
+        <div class="login-modal">
+            <div class="btn">
+            </div>
+            <h1>Login</h1>
+            <form method="POST" action="/api/user/login">
+                <input type="text" name="email" placeholder="Digite seu Email" required>
+                <input type="password" name="password" placeholder="Digite sua Senha" required>
+            </form>
+            <a href="cadastro.html" class=" esqueceu a senha">Não Possui Conta</a>
+
+            <form action="/html/Coordenador/index.html">
+                <input type="submit" name="login" value="Login">
+            </form>
+
+            <!--<span class="login-modal-texto">ou Faça login com</span>-->
+            <div class="login-icones">
+
+                <a href="../Candidate/index.html"><button type="button" class="login-with-btn"></i>P</button></a>
+                <a href="../Administrator/index.html"><button type="button" class="login-with-btn"></i>A</button></a>
+                <a href="../Coordinator/index.html"><button type="button" class="login-with-btn"></i>C</button></a>
+
+
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+</body>
+
+</html>

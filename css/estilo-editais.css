@@ -1,0 +1,149 @@
+body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: nowrap;
+    height: 70px;
+    background: #8a0b0b;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+/*imagem*/
+.content {
+    display: flex;
+    align-items: center;
+    /* Centraliza verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+    gap: 20px;
+
+}
+
+.img-container {
+    flex: 1;
+    text-align: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.text-container {
+    text-align: left;
+    height: 500px;
+    max-width: 600px;
+    margin-left: 20px;
+
+}
+
+.text-container h2 {
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    margin-bottom: 10px;
+}
+
+
+.menu a {
+    transition: .5s;
+    color: #f3f2f8;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 30px;
+    font-weight: bolder;
+}
+
+.menu a:hover {
+    transition: .5s;
+    color: black;
+    background-color: #dd3d3d;
+    border-radius: 5px;
+}
+
+.container {
+    background-color: #9a9393;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #0a0a0a;
+}
+
+button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #e66909;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc5807;
+}
+
+footer {
+    text-align: center;
+    background: gray;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.logo-rodape {
+    margin-bottom: 20px;
+}
+
+#dir {
+    display: block;
+    color: #000;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

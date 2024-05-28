@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um site de exemplo do modulo de CSS">
+    <meta name="keywords" content="Agencia Digital, CSS, HTML">
+    <link rel="stylesheet" href="../../css/estilo-editais.css">
+    <title>Portal de Estagios</title>
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="../../img/cps.png">
+        <img src="../../img/fatec.png">
+        <img src="../../img/brasao_sp.jpg">
+    </div>
+
+
+    <navbar>
+        <nav class="navbar">
+            <div class="menu">
+                <a href="home.html">Pagina Inicial</a>
+                <a href="estagios.html">Estagios</a>
+                <a id="botao" href="login.html">Login</a>
+            </div>
+        </nav>
+
+
+        </head>
+
+        <body>
+
+            <h1>Cadastro de estagio</h1>
+            <form>
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso">
+                    <option value="">Selecione o Curso</option>
+                    <option value="DSM">Desenvolvimento de Multiplataforma</option>
+                    <option value="GE">Gestão Empresarial</option>
+                    <option value="GPI">Gestão da Produção Industrial</option>
+                    <option value="GTI">Gestão da Tecnologia da Informação</option>
+                </select><br><br>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="ra">RA (Registro Acadêmico):</label><br>
+                <input type="text" id="ra" name="ra" required><br><br>
+
+                <label for="turma">Turma:</label><br>
+                <input type="text" id="turma" name="turma" required><br><br>
+
+                <h1>Anexe aqui seus documentos do estagio</h1>
+
+                <label for="documento1">Plano de Atividades:</label><br>
+                <input type="file" id="documento1" name="documento1" accept=".pdf,.doc,.docx" required><br><br>
+
+                <label for="documento2">Termo de Compromisso:</label><br>
+                <input type="file" id="documento2" name="documento2" accept=".pdf,.doc,.docx" required><br><br>
+
+                <input type="submit" value="Enviar Documentos">
+            </form>
+            <footer>
+                <div class="logo-rodape">
+                    <h1 class="agencia">Fatec Itapira</h1>
+                    <p> Endereço: Rua Tereza Lera Paoletti, 570/590 - Jardim Bela Vista</p>
+                    <p> CEP: 13974-080</p>
+                    <p>Telefones: (19) 3843-1996</p>
+                    <p> Whatsapp: (19) 98933-6291 | (19) 3863-5210</p>
+                    <p> E-mail: contato@fatecitapira.edu.br</p>
+                </div>
+            </footer>
+            <b id="dir">© Todos os direitos reservados.</b>
+
+        </body>
+
+</html>
