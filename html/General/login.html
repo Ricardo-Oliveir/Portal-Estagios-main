@@ -13,33 +13,13 @@
 <body>
     <section id="sessão_1">
         <div class="login-modal">
-            <div class="btn">
-            </div>
             <h1>Login</h1>
-            <form method="POST" action="/api/user/login">
+            <form method="POST" action="login.php">
                 <input type="text" name="email" placeholder="Digite seu Email" required>
                 <input type="password" name="password" placeholder="Digite sua Senha" required>
+                <input type="submit" value="Login">
             </form>
-            <a href="cadastro.html" class=" esqueceu a senha">Não Possui Conta</a>
-
-            <form action="/html/Coordenador/index.html">
-                <input type="submit" name="login" value="Login">
-            </form>
-
-            <!--<span class="login-modal-texto">ou Faça login com</span>-->
-            <div class="login-icones">
-
-                <a href="../Candidate/index.html"><button type="button" class="login-with-btn"></i>P</button></a>
-                <a href="../Administrator/index.html"><button type="button" class="login-with-btn"></i>A</button></a>
-                <a href="../Coordinator/index.html"><button type="button" class="login-with-btn"></i>C</button></a>
-
-
-            </div>
-        </div>
-
-
+            <a href="cadastro.html" class="esqueceu-a-senha">Não Possui Conta</a>
         </div>
     </section>
 </body>
-
-</html>

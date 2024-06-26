@@ -12,38 +12,22 @@
 <body>
     <section id="sessão_2">
         <div class="login-modal">
-            <div class="close-btn">
-
-            </div>
             <h1>Cadastro</h1>
-            <form action="/api/user/register" method="POST">
-
-                <input type="text" name="Primeiro_nome" class="username-input" placeholder="Nome Completo" required>
-
-                <input type="number" name="matricula" class="Matricula-input" placeholder="Matrícula" required>
-
-                <input type="tel" name="Telefone" class="Telefone-input" placeholder="Telefone" required>
-
+            <form action="register.php" method="POST">
+                <input type="text" name="nome_completo" class="username-input" placeholder="Nome Completo" required>
+                <input type="number" name="matricula" class="matricula-input" placeholder="Matrícula" required>
+                <input type="tel" name="telefone" class="telefone-input" placeholder="Telefone" required>
                 <input type="email" name="email" class="email-input" placeholder="Email" required>
-
                 <input type="password" name="senha" class="password-input" placeholder="Senha" required>
-
-                <input type="password" name="senha" class="password-input" placeholder="Confirme a Senha" required>
-
-                <select id="fatec-input">
-                    <option>Selecione sua fatec</option>
-                    <option>Itapira</option>
-                    <option>Mogi Mirin</option>
-                    <option>São Paulo</option>
-                </select>
-
+                <input type="password" name="confirma_senha" class="password-input" placeholder="Confirme a Senha"
+                    required>
+                <input type="checkbox" name="termos" value="concordo" id="agree" required>
+                <label for="agree">Eu concordo com os termos</label>
+                <input type="submit" value="Enviar">
+                <a href="login.html" class="sign-up">Já possui uma conta? Login</a>
+                <input type="checkbox" name="checkbox" value="check" id="agree" !>
+                <p>eu concordo com os termos</p>
             </form>
-
-
-            <a href="login.html" class="sign-up">Enviar</a>
-
-            <input type="checkbox" name="checkbox" value="check" id="agree" !>
-            <p>eu concordo com os termos</p>
         </div>
     </section>
 </body>
